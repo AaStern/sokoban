@@ -153,17 +153,6 @@ void move_down(map_t *map, int *x, int *y)
 		(*y)++;
 }
 
-
-void h_option(char *arg)
-{
-	if (my_strlen(arg) == 2 && arg[0] == '-' && arg[1] == 'h') {
-		my_putstr("USAGE\n\t./my_sokoban map\nDESCRIPTION\n\tmap  ");
-		my_putstr("file representing the warehouse map, containing");
-		my_putstr(" '#' for walls,\n'P' for the player, 'X' ");
-		my_putstr("for boxes and 'O' for storage locations.\n");
-	}
-}
-
 void move_player(map_t *map, int keyboard, char *arg)
 {
 	if (keyboard == KEY_LEFT)
@@ -182,7 +171,6 @@ FILE *fopen_file(char *pathname)
 {
 	FILE *file;
 
-	h_option(pathname);
 	if ((file = fopen(pathname, "r")) == NULL)
 		exit(84);
 	return (file);
