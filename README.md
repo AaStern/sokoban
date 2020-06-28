@@ -1,9 +1,5 @@
 # SoKoBan
-## Build:
+##For build and play:
 ```
-make
-```
-## and play:
-```
-./SoKoBan map
+./Start.sh
 ```
