@@ -1,5 +1,5 @@
 # SoKoBan
-##For build and play:
+## For build and play:
 ```
 ./Start.sh
 ```
